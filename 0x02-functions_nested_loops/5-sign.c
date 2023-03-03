@@ -1,14 +1,14 @@
 #include "main.h"
-/**
- * pirnt_sing - check number is positve, zero or negative
- *@n - the number to be checked 
 
- * this function check the weather of a number if it is a positive return (+),
- * if is a zero return (0)and if it is a negative reaturn (-)
+/**
+ * print_sign - prints the sign of a number
  *
- *Retrun: (+) if the @n greater then 0, 
- *         (-) if the @n is less then zero
- *         .(0)otherwise
+ * Description: Prints +, 0 or - depending on whether n is positive,
+ * zero or negative respectively
+ *
+ * @n: The number to be checked
+ *
+ * Return: 1 if n is positive, 0 if n is zero, -1 if n is negative
  */
 
 int print_sign(int n)
@@ -25,11 +25,9 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putchar('-');	
+		_putchar('-');
 		return (-1);
 	}
 
 	return (0);
 }
-
-
