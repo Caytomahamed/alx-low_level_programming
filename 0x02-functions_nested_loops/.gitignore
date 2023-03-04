@@ -1,3 +1,8 @@
+# ignore all test files
 test/
+
+# ignore  all excuteable files
+exe/
+
+# ignore for this file for alx 
 _putchar.c
-*.exe
