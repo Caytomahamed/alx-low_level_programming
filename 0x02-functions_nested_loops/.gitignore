@@ -1,5 +1,5 @@
 # ignore all test files
-test/
+tests/
 
 # ignore  all excuteable files
 exe/
