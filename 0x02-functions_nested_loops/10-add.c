@@ -5,7 +5,7 @@
  * @a: first number
  * @b: second number
  *
- * Retrun: sum of the two numbers
+ * Return: Always sum of @a and @b (Success)
 */
 
 int add(int a, int b)
