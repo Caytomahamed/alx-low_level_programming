@@ -12,13 +12,15 @@
 int main(void)
 {
 	int i = 0;
-	int n1 = 0;
-	int n2 = 1;
-	int nextTerm;
+	unsigned long int n1, n2, nextTerm;
+
+	n1 = 1;
+	n2 = 2;
 
 	while (i <= 98)
 	{
-		printf("%d\n", n1);
+		printf("%lu, ", n1);
+
 		nextTerm = n1 + n2;
 		n1 = n2;
 		n2 = nextTerm;
