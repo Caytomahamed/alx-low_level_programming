@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * natural - print sum of multiples of 3 or 5 less then 1024
+ * main - print sum of multiples of 3 or 5 less then 1024
  *
  * Return: multiples 3 0r 5 below 1024
  */
