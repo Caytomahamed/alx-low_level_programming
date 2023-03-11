@@ -6,7 +6,7 @@
  * Return: multiples 3 0r 5 below 1024
  */
 
-void main(void)
+int main(void)
 {
 	int i;
 	int sum = 0;
@@ -19,4 +19,6 @@ void main(void)
 			sum += i;
 	}
 	printf("%d\n", sum);
+
+	return (0);
 }
