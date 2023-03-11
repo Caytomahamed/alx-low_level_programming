@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - print sequence of numbers
+ * main - Entry point
  *
- * Reterun: 0 always 
+ * Return: Always 0 (Success)
  */
 
 int main(void)
