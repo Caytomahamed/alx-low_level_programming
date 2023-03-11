@@ -23,6 +23,8 @@ int main()
 		n2 = nextTerm;
 		i++;
 	}
+
+	printf("\n");
        
 	return (0);
 }
