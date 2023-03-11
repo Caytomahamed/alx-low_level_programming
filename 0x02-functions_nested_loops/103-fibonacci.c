@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	unsigned long int n1, n2, nextTerm, sum;
+	int n1, n2, nextTerm, sum;
 
 	n1 = 1;
 	n2 = 2;
@@ -23,7 +23,7 @@ int main(void)
 		n2 = nextTerm;
 	}
 
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
 
