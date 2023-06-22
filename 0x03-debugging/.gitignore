@@ -2,3 +2,6 @@
 *.layout
 *.depend
 *.workspace
+
+bin/
+obj/
