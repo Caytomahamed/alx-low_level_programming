@@ -31,6 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename=".gitignore">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="0-main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="README.md">
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

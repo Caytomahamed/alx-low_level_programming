@@ -1,2 +1,4 @@
-main.c
-0x03-debugging.cbp
+*.cbp
+*.layout
+*.depend
+*.workspace
