@@ -1,49 +1,48 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 
 /**
- * infinite_add - Add two number
- * @n1: number 1
- * @n2: number 2
- * @r: stored result
- * @size_r: lenght of store result
- *
- * Return: pointer
+ * infinite_add - adds two numbers
+ * @n1: first number
+ * @n2: second number
+ * @r: buffer for result
+ * @size_r: buffer size
+ * ahhh! Crazy task! Expand your knowledge
+ * Return: address of r or 0
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int carry = 0;
-	int len1 = strlen(n1);
-	int len2 = strlen(n2);
-	int max_len = (len1 > len2) ? len1 : len2;
-	int i, digit1, digit2, sum;
+	int i, j, k, l, m, n;
 
-	if (max_len >= size_r)
-	{
+	for (i = 0; n1[i]; i++)
+		;
+	for (j = 0; n2[j]; j++)
+		;
+	if (i > size_r || j > size_r)
 		return (0);
-	}
-
-	r[max_len] = '\0';
-
-	for (i = max_len - 1; i >= 0; i--)
+	m = 0;
+	for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
 	{
-		digit1 = (i >= len1) ? 0 : n1[i] - '0';
-		digit2 = (i >= len2) ? 0 : n2[i] - '0';
-		sum = digit1 + digit2 + carry;
-		carry = sum / 10;
-		r[i] = sum % 10 + '0';
-	}
-
-	if (carry)
-	{
-		if (max_len + 1 >= size_r)
+		n = m;
+		if (i >= 0)
+			n += n1[i] - '0';
+		if (j >= 0)
+			n += n2[j] - '0';
+		if (i < 0 && j < 0 && n == 0)
 		{
-			return (0);
+			break;
 		}
-		memmove(r + 1, r, max_len + 1);
-		r[0] = carry + '0';
+		m = n / 10;
+		r[k] = n % 10 + '0';
 	}
-
+	r[k] = '\0';
+	if (i >= 0 || j >= 0 || m)
+		return (0);
+	for (k -= 1, l = 0; l < k; k--, l++)
+	{
+		m = r[k];
+		r[k] = r[l];
+		r[l] = m;
+	}
 	return (r);
 }
+/*Bwave */
