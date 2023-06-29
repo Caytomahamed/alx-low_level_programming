@@ -1,27 +1,29 @@
+#include "main.h"
+
 /**
- * _strcat - Cat function
- * @dest: destination
- * @src: source
- *
- * Return: Resulting string
+ * _strcat - function that concatenates two strings.
+ * @src: cadena a copiar
+ * @dest: destino de la cadena.
+ * Return: dest.
  */
+
 char *_strcat(char *dest, char *src)
 {
-	char *p = dest;
+	int i;
+	int j;
 
-	/*Move the pointer to the end of dest */
-	while (*p != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		p++;
+		i++;
 	}
-
-	/* Append src to dest*/
-	while (*src != '\0')
+	j = 0;
+	while (src[j] != '\0')
 	{
-		*p++ = *src++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-
-	/*Add a terminating null byte*/
-	*p = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
