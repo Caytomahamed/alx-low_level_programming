@@ -7,9 +7,15 @@
 
 void _puts_recursion(char *s)
 {
-	_putchar(*s);
+	if (*s == "")
+	{
+		_putchar(' ');
+	}
+	else
+		_putchar(*s);
+		
 	s++;
-	if (*s != '\0')
+	if (*s != '\0' && *s != " ")
 		_puts_recursion(s);
 
 	if (*s == '\0')
