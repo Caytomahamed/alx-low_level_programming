@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", result);
-		return 0;
+		return (0);
 	}
 
 	for (i = 1; i < argc; i++)
@@ -29,11 +29,11 @@ int main(int argc, char *argv[])
 		if (*endptr != '\0' || endptr == argv[i])
 		{
 			printf("Error\n");
-			return 1;
+			return (1);
 		}
 		result += num;
 	}
 
 	printf("%d\n", result);
-	return 0;
+	return (</stdlib.h>0);
 }
