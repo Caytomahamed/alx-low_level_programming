@@ -35,5 +35,5 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", result);
-	return (</stdlib.h>0);
+	return (0);
 }
