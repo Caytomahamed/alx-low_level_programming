@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
  * _strdup - duplicates a string
  * @str: the string to duplicate
@@ -9,6 +11,9 @@ char *_strdup(char *str)
 {
 	unsigned int len = 0;
 	char *new_copy, *copy_start;
+
+	if (str == NULL)
+		return (NULL);
 
 	while (str[len] != '\0')
 		++len;
