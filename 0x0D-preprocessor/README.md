@@ -93,11 +93,11 @@ In addition to the standard predefined macros, many compilers define their own s
 In conclusion, understanding the C program compilation process, object-like macros, macro arguments, preprocessor directives, and predefined macros is essential for writing efficient and portable C code. These concepts are fundamental to the C programming language and are used extensively in real-world C programs.
 
 ## Reference
-[Understanding C program Compilation Process (Watch)](https://youtu.be/VDslRumKvRA)
-[Object-like Macros (Read)](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Object-like-Macros.html#Object-like-Macros)
-[Macro Arguments (Read)](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Macro-Arguments.html#Macro-Arguments)
-[Pre Processor Directives in C (Watch)](https://youtu.be/X6HiYbY3Uak)
+- [Understanding C program Compilation Process (Watch)](https://youtu.be/VDslRumKvRA)
+- [Object-like Macros (Read)](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Object-like-Macros.html#Object-like-Macros)
+- [Macro Arguments (Read)](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Macro-Arguments.html#Macro-Arguments)
+- [Pre Processor Directives in C (Watch)](https://youtu.be/X6HiYbY3Uak)
 [The C Preprocessor (Read)](https://www.cprogramming.com/tutorial/cpreprocessor.html)
-[Standard Predefined Macros (Read)](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Standard-Predefined-Macros.html#Standard-Predefined-Macros)
-[include guard (Read)](https://en.wikipedia.org/wiki/Include_guard)
-[Common Predefined Macros (Read)](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Common-Predefined-Macros.html#Common-Predefined-Macros)
+- [Standard Predefined Macros (Read)](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Standard-Predefined-Macros.html#Standard-Predefined-Macros)
+- [include guard (Read)](https://en.wikipedia.org/wiki/Include_guard)
+- [Common Predefined Macros (Read)](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Common-Predefined-Macros.html#Common-Predefined-Macros)
