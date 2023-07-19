@@ -13,7 +13,6 @@ int main(int argc, char *argv[])
 {
 	int a;
 	int b;
-	int result;
 	char *s;
 	int (*op_fun)(int, int);
 
@@ -29,17 +28,13 @@ int main(int argc, char *argv[])
 
 	op_fun = get_op_func(s);
 
-	if (op_fun != NULL)
-	{
-		result = op_fun(a, b);
-		printf("%d\n", result);
-	}
-
-	if (op_fun == NULL)
+	if (!op_fun)
 	{
 		printf("Error\n");
 		return (99);
 	}
+
+	printf("%d\n", op_fun(a, b));
 
 	return (0);
 }
